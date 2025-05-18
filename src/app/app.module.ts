@@ -6,7 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { CookieService } from 'ngx-cookie-service';
-import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ButtonModule } from 'primeng/button';
 import { ContextMenuModule } from 'primeng/contextmenu';
@@ -70,7 +69,6 @@ import { RequestLogComponent } from './components/request-log/request-log.compon
     RequestLogComponent
   ],
   imports: [
-    LoggerModule.forRoot({ level: NgxLoggerLevel.TRACE }),
     BrowserModule,
     AppRoutingModule,
     FormsModule,
