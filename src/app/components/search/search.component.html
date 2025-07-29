@@ -400,12 +400,12 @@
                   " dataKey="id" (onRowSelect)="onRowSelect($event)" (onRowUnselect)="onRowUnselect($event)">
                                     <ng-template pTemplate="header" let-columns>
                                         <tr id="headers_main">
-                                            <th id="header_checkBox" style="width: 6em">
+                                            <th id="header_checkBox" style="width: 6em; padding: 0.5em;">
                                                 <label>Select All</label>
                                                 <p-tableHeaderCheckbox id="hdr_checkbox"></p-tableHeaderCheckbox>
                                             </th>
                                             <th id="header_column_{{ i }}" *ngFor="let col of columns; let i = index"
-                                                [pSortableColumn]="col.field" pTooltip="Sort this page's results" style="padding: 5px">
+                                                [pSortableColumn]="col.field" pTooltip="Sort this page's results">
                                                 {{ col.header }}
                                                 <p-sortIcon [field]="col.field" ariaLabel="Activate to sort"
                                                             ariaLabelDesc="Activate to sort in descending order"
